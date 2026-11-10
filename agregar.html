@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Añadir Superhéroe</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- ENCABEZADO -->
+    <p class="descuento">20% de descuento en todos los productos!</p>
+
+    <header>
+      <div class="encabezado-tienda">
+        <div class="logo-tienda">
+          <img src="img/logo.png" alt="Logo de la tienda" />
+          <h1>Nombre Tienda</h1>
+        </div>
+      </div>
+
+      <!-- FRANJA NEGRA DE NAVEGACION -->
+      <nav class="menu-tienda">
+        <a href="#">Contacto</a>
+        <a href="#">Registrarme</a>
+        <a href="#">Ingresar</a>
+      </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+      <section class="formulario-super">
+        <h2>¡Añadí tu super!</h2>
+
+        <p>Agregá tu personaje favorito completando las opciones.</p>
+
+        <!-- Aquí construiremos el formulario -->
+        <form>
+          <div class="fila-formulario">
+            <div class="campo">
+              <label for="nombre">*Nombre</label>
+              <input type="text" id="nombre" name="nombre" required />
+            </div>
+
+            <div class="campo">
+              <label for="especie">*Especie</label>
+              <select id="especie" name="especie" required>
+                <option value="">Especie</option>
+                <option value="humano">Humano</option>
+                <option value="alienigena">Alienígena</option>
+                <option value="desconocido">Desconocido</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- SEGUNDA FILA: FECHA Y FOTO -->
+          <div class="fila-formulario">
+            <div class="campo">
+              <label for="fecha">Fecha</label>
+              <input type="date" id="fecha" name="fecha" />
+            </div>
+
+            <div class="campo">
+              <label for="foto">Agregar Foto</label>
+              <input type="file" id="foto" name="foto" />
+            </div>
+          </div>
+          <div class="fila-formulario">
+            <div class="campo">
+              <textarea
+                id="descripcion"
+                name="descripcion"
+                placeholder="Descripción"
+                rows="10"
+              ></textarea>
+            </div>
+            <!-- PODERES -->
+            <div class="campo">
+              <label>Poderes</label>
+              <label>
+                <input type="checkbox" name="poderes" value="volar" />
+                Volar
+              </label>
+
+              <label>
+                <input
+                  type="checkbox"
+                  name="poderes"
+                  value="superinteligencia"
+                />
+                Superinteligencia
+              </label>
+
+              <label>
+                <input type="checkbox" name="poderes" value="rayos" />
+                Vista de rayos láser
+              </label>
+
+              <label>
+                <input type="checkbox" name="poderes" value="billetera" />
+                Billetera gorda
+              </label>
+
+              <!-- TIPO DE PERSONAJE -->
+              <hr />
+
+              <p>Tipo de personaje</p>
+
+              <label>
+                <input type="radio" name="tipo" value="heroe" />
+                Héroe / Heroína
+              </label>
+
+              <label>
+                <input type="radio" name="tipo" value="villano" />
+                Villano / Villana
+              </label>
+            </div>
+            <!-- Cierra el campo Poderes -->
+          </div>
+
+          <!-- BOTON AÑADIR -->
+          <button type="submit" class="boton-anadir">Añadir</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+      <p>Todos los derechos reservados a TDW</p>
+    </footer>
+  </body>
+</html>
